@@ -1,0 +1,27 @@
+.confirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: var(--font-poppins);
+  .mainContainer {
+    // display: flex;
+    flex-direction: column;
+    flex-wrap: wrap !important;
+
+    .order_summary {
+      background-color: aliceblue;
+      padding: 1.5rem;
+      border-radius: 10px;
+
+      button {
+        background-color: #2c3e50;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+      }
+    }
+  }
+}

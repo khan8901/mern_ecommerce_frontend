@@ -1,0 +1,61 @@
+@import "../../colors.scss";
+.container {
+  display: flex;
+  justify-content: center;
+
+  .carouselContainer {
+    background-color: $Color1;
+    width: 100%;
+    margin: 0px 20px;
+    padding: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .carouselImage {
+      position: relative;
+      width: 800px;
+      display: flex;
+      justify-content: center;
+      z-index: 99;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+  }
+}
+
+.arrowButton {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &.left {
+    left: 4%;
+    background: none;
+    color: whitesmoke;
+    font-size: larger;
+    z-index: 9999;
+  }
+
+  &.right {
+    right: 4%;
+    background: none;
+    color: whitesmoke;
+    font-size: larger;
+    z-index: 9999;
+  }
+
+  &:hover {
+    color: black;
+    background-color: #f9f9f99b;
+  }
+}

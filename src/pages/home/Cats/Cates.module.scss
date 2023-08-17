@@ -1,0 +1,20 @@
+.container {
+  margin: 0px 10px;
+  .items {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-width: none;
+
+    .item {
+      display: flex;
+      margin: 0px 20px;
+    }
+  }
+}
+.container .items::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
